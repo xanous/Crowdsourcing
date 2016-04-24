@@ -42,7 +42,7 @@
 
       </form>
 
-      <p class="text--center">Not a member? <a href="<%= request.getContextPath()%>/include/SignIn.jsp">Sign up now</a> <span class="fontawesome-arrow-right"></span></p>
+      <p class="text--center">Not a member? <a href="<%= request.getContextPath()%>/Pages/SignIn.jsp">Sign up now</a> <span class="fontawesome-arrow-right"></span></p>
 
     </div>
  </div>

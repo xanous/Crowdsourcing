@@ -33,15 +33,15 @@
 		<div class="clear"> </div>	
       </div>
       <h2>Or Signup with</h2>
-		<form>
+		<form action="../SignIn" method="POST">
 		   <div class="lable">
-		        <div class="col_1_of_2 span_1_of_2"><input type="text" class="text" value="First Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}"></div>
-                <div class="col_1_of_2 span_1_of_2"><input type="text" class="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></div>
+		        <div class="col_1_of_2 span_1_of_2"><input type="text" class="text" name="fname" value="First Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}"></div>
+                <div class="col_1_of_2 span_1_of_2"><input type="text" class="text" name="lname" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></div>
                 <div class="clear"> </div>
 		   </div>
 		   <div class="lable-2">
-		        <input type="text" class="text" value="your@email.com " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'your@email.com ';}">
-		        <input type="password" class="text" value="Password " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password ';}">
+		        <input type="text" class="text" name="email" value="your@email.com " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'your@email.com ';}">
+		        <input type="password" class="text" name="password" value="Password " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password ';}">
 		   </div>
 		   <h3>By creating an account, you agree to our <span class="term"><a href="#">Terms & Conditions</a></span></h3>
 		   <div class="submit">

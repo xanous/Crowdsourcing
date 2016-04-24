@@ -6,11 +6,11 @@
 <title>My Template</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<%@ include file="/include/css.jsp" %>
+<%@ include file="../include/css.jsp" %>
 </head>
 <body class="landing">
 <div id="page-wrapper">
-<%@ include file="/include/header.jsp" %>
+<%@ include file="../include/header.jsp" %>
 <!-- Main -->
 				<div id="main" class="wrapper style1">
 					<div class="container">
