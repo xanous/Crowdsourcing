@@ -14,4 +14,15 @@ public class UserService {
 		session.save(u);
 		session.getTransaction().commit();
 	}
+	
+	public User getUserByLogin(String login){
+		Session session=Hibernate.getSessionFactory().getCurrentSession();
+		session.beginTransaction();
+		//User user=(User) session.load(User.class, login);
+		User user=(User) session.get(User.class, login);
+		
+		//session.ge
+		return user;
+		
+	}
 }

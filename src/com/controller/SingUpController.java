@@ -1,6 +1,7 @@
 package com.controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -57,9 +58,8 @@ public class SingUpController extends HttpServlet {
 	        }
 		User user = new User(request.getParameter("email"), hexString.toString(),
 				request.getParameter("fname"),request.getParameter("lname"));
-		UserService service1 = new UserService();
-		
-		service1.add(user);
+		UserService service = new UserService();
+		service.add(user);
 	}
 
 }

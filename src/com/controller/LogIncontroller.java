@@ -1,6 +1,7 @@
 package com.controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -52,10 +53,21 @@ public class LogIncontroller extends HttpServlet {
 		for (int i = 0; i < hash.length; i++) {
 			hexString.append(Integer.toString((hash[i] & 0xff) + 0x100, 16).substring(1));
 	        }
-		User user = new User(request.getParameter("email"), hexString.toString(),
-				request.getParameter("fname"),request.getParameter("lname"));
-		UserService service1 = new UserService();
+		UserService service = new UserService();
+		User user = service.getUserByLogin(request.getParameter("email"));
+		pass = hexString.toString();
+		PrintWriter out = response.getWriter();
+		out.println(user.getPassword());
 		
-	}
+		if(pass.equals(user.getPassword())){
+			response.sendRedirect(request.getContextPath()+"/index.jsp");
+		}
+		else{
+			request.setAttribute("username_pass_error", "username_pass_error");
+			//response.
+			//response.sendRedirect(request.getContextPath()+"/Pages/LogIn.jsp");
+			request.getRequestDispatcher("Pages/LogIn.jsp").forward(request, response);;
+		}
+		}
 
 }
