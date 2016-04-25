@@ -1,4 +1,4 @@
-package com.controler;
+package com.controller;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -18,14 +18,13 @@ import com.service.UserService;
 /**
  * Servlet implementation class SignInContorler
  */
-public class SignInContorler extends HttpServlet {
+public class SingUpController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public SignInContorler() {
-        //super();
+    public SingUpController() {
         // TODO Auto-generated constructor stub
     }
 
@@ -34,7 +33,7 @@ public class SignInContorler extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		
 	}
 
 	/**
@@ -56,7 +55,8 @@ public class SignInContorler extends HttpServlet {
 		for (int i = 0; i < hash.length; i++) {
 			hexString.append(Integer.toString((hash[i] & 0xff) + 0x100, 16).substring(1));
 	        }
-		User user = new User(request.getParameter("email"), hexString.toString(), "a", "a", new Date());
+		User user = new User(request.getParameter("email"), hexString.toString(),
+				request.getParameter("fname"),request.getParameter("lname"));
 		UserService service1 = new UserService();
 		
 		service1.add(user);

@@ -4,17 +4,24 @@
 	<servlet>
 		<description>
 		</description>
-		<display-name>SignInContorler</display-name>
-		<servlet-name>SignInContorler</servlet-name>
-		<servlet-class>com.controler.SignInContorler</servlet-class>
+		<display-name>SingUpController</display-name>
+		<servlet-name>SingUpController</servlet-name>
+		<servlet-class>com.controller.SingUpController</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>LogIncontroller</display-name>
+		<servlet-name>LogIncontroller</servlet-name>
+		<servlet-class>com.controller.LogIncontroller</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>SignInContorler</servlet-name>
-		<url-pattern>/SignInContorler</url-pattern>
+		<servlet-name>SingUpController</servlet-name>
+		<url-pattern>/SignUp</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
-		<servlet-name>SignInContorler</servlet-name>
-		<url-pattern>/SignIn</url-pattern>
+		<servlet-name>LogIncontroller</servlet-name>
+		<url-pattern>/LogIn</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
