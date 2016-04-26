@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated 26 avr. 2016 02:23:45 by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
-    <class name="com.domain.User" table="USER">
+    <class name="com.domain.Requester" table="Requester">
         <id name="login" type="java.lang.String" access="field">
             <column name="LOGIN" />
             <generator class="assigned" />

@@ -10,21 +10,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.domain.Requester;
 import com.domain.User;
 import com.domain.Worker;
 import com.service.UserService;
 
 /**
- * Servlet implementation class LogIncontroller
+ * Servlet implementation class LogInWcontroller
  */
-public class LogInRequesterController extends HttpServlet {
+public class LogInWorkerController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LogInRequesterController() {
+    public LogInWorkerController() {
         // TODO Auto-generated constructor stub
     }
 
@@ -55,8 +54,9 @@ public class LogInRequesterController extends HttpServlet {
 			hexString.append(Integer.toString((hash[i] & 0xff) + 0x100, 16).substring(1));
 	        }
 		UserService service = new UserService();
-		User user = service.getUserByLogin(request.getParameter("email"), Requester.class);
+		User user = service.getUserByLogin(request.getParameter("email"),Worker.class);
 		pass = hexString.toString();
+		
 		if(user == null ){
 			request.setAttribute("username_pass_error", "username_pass_error");
 			request.getRequestDispatcher("Pages/LogInRequester.jsp").forward(request, response);;

@@ -11,17 +11,28 @@
 	<servlet>
 		<description>
 		</description>
-		<display-name>LogIncontroller</display-name>
-		<servlet-name>LogIncontroller</servlet-name>
-		<servlet-class>com.controller.LogIncontroller</servlet-class>
+		<display-name>LogInRequesterController</display-name>
+		<servlet-name>LogInRequesterController</servlet-name>
+		<servlet-class>com.controller.LogInRequesterController</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>LogInWorkerController</display-name>
+		<servlet-name>LogInWorkerController</servlet-name>
+		<servlet-class>com.controller.LogInWorkerController</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>SingUpController</servlet-name>
 		<url-pattern>/SignUp</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
-		<servlet-name>LogIncontroller</servlet-name>
-		<url-pattern>/LogIn</url-pattern>
+		<servlet-name>LogInRequesterController</servlet-name>
+		<url-pattern>/LogInRequester</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LogInWorkerController</servlet-name>
+		<url-pattern>/LogInWorker</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>

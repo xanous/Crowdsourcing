@@ -19,10 +19,9 @@
 					</li>
 				</ul>
 			</li>
-			<li><a href="elements.html">Worker</a></li>
-			<li><a href="<%= request.getContextPath()%>/Pages/Requester.jsp">Requester</a></li>
-			<li><a href="<%= request.getContextPath()%>/Pages/Worker.jsp">Worker</a></li>
-			<li><a href="<%= request.getContextPath()%>/Pages/LogIn.jsp" class="button special">Log In</a></li>
+			<li><a href="<%= request.getContextPath()%>/Pages/LogInRequester.jsp">Sign in as a Requester</a></li>
+			<li><a href="<%= request.getContextPath()%>/Pages/LogInWorker.jsp">Sign in as a Worker</a></li>
+			<li><a href="<%= request.getContextPath()%>/Pages/SignUp.jsp" class="button special">Sign Un</a></li>
 			
 		</ul>
 	</nav>

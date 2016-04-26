@@ -29,5 +29,7 @@
         <property name="hbm2ddl.auto">update</property>
          
   <mapping class="com.domain.User" resource="com/domain/User.hbm.xml"/>
+  <mapping class="com.domain.Worker" resource="com/domain/Worker.hbm.xml"/>
+  <mapping class="com.domain.Requester" resource="com/domain/Requester.hbm.xml"/>
  </session-factory>
 </hibernate-configuration>
