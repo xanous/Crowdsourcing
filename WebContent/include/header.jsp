@@ -19,8 +19,8 @@
 					</li>
 				</ul>
 			</li>
-			<li><a href="elements.html">Worker</a></li>
-			<li><a href="<%= request.getContextPath()%>/Pages/requester.jsp">Requester</a></li>
+			<li><a href="<%= request.getContextPath()%>/Pages/Worker.jsp">Worker</a></li>
+			<li><a href="<%= request.getContextPath()%>/Pages/Requester.jsp">Requester</a></li>
 			<li><a href="<%= request.getContextPath()%>/Pages/SignUp.jsp" class="button special">Sign Up</a></li>
 			
 		</ul>

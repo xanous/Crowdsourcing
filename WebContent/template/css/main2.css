@@ -2160,7 +2160,7 @@
 		margin: 0 0 1em 0;
 	}
 
-	input[type="text"],
+	
 	input[type="password"],
 	input[type="email"],
 	select,
@@ -4023,5 +4023,17 @@
 						margin: 0;
 						padding: 0;
 					}
-
-	}
+				
+				}
+				#block
+                  {
+              background-color:#525252;
+              color:black;
+              width: 200px;
+              height: 200px;
+              -moz-border-radius: 10px;
+              margin-left:8.5cm;
+               font-weight:bold;
+               align:center;
+ 
+            }	

@@ -1,10 +1,11 @@
 <header id="header">			
 	<nav id="nav">
 		<ul>
-			<li><a href="<%= request.getContextPath()%>">Home</a></li>
-			<li><a href="elements.html">Worker</a></li>
-			<li><a href="<%= request.getContextPath()%>/include/requester.jsp">Requester</a></li>
-			<li><a href="<%= request.getContextPath()%>/include/SignUp.jsp" class="button special">Logout</a></li>
+			<li><a href="<%= request.getContextPath()%>/Pages/HomeRequester.jsp">Home</a></li>
+			<li><a href="<%= request.getContextPath()%>/Pages/Requester.jsp">Create Project</a></li>
+			<li><a href="#">Account</a></li>
+			<li><a href="#">Setting</a></li>
+			<li><a href="<%= request.getContextPath()%>/index.jsp" class="button special">Logout</a></li>
 			
 		</ul>
 	</nav>
