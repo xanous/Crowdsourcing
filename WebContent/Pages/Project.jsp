@@ -14,7 +14,6 @@
 <div id="main" class="wrapper style1">
 					<div class="container">
 						
-<h2 style='font-family:Andalus;font-size:140%; font-weight:normal;background: rgba(39, 40, 51, 0.965);box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);line-height: inherit;text-align: center;'>create your project and don't worry about the results!</h2>
 <div  style='background-color:#525252;width: 1213px;height: 70px;'>Give a name To your Project</div>
    					
 <form class="input-append" action="<%= request.getContextPath()%>/include/next1.jsp" method="POST">

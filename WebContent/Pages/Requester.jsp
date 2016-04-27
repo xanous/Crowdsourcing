@@ -18,7 +18,7 @@
     <h2>Requester</h2>
   </header>
 	<ul>
-    <li tabindex="0" class="icon-dashboard"><span><a href="<%= request.getContextPath()%>/Pages/Requester.jsp" style='text-decoration: none;color:white;'>Writing</a></span></li>
+    <li tabindex="0" class="icon-dashboard"><span><a href="<%= request.getContextPath()%>/Pages/Project.jsp" style='text-decoration: none;color:white;'>Writing</a></span></li>
     <li tabindex="0" class="icon-customers"><span>Upload</span></li>
     <li tabindex="0" class="icon-users"><span>Choose Response</span></li>
     <li tabindex="0" class="icon-users"><span>Other</span></li>
@@ -27,11 +27,11 @@
 </nav>
 
 <script src="<%= request.getContextPath()%>/menuRequester/js/script.js"></script>
-<div  style='padding-left:100px;position: absolute;top: 20%;' ><img src="<%= request.getContextPath()%>/HomeRequester/images/start.png"/></div>
+<!--  <div  style='padding-left:100px;position: absolute;top: 20%;width:30%;height:100%' ><img src="<%= request.getContextPath()%>/HomeRequester/images/start.jpg"/></div>-->
 <form>
-<p style='padding-left:500px;text-align:center;position: absolute;top: 80%;'><input type="submit" value="Start Creating Project" class="button special"/> </p>
+<p style='padding-left:500px;text-align:center;position: absolute;top: 80%;'><a href="<%= request.getContextPath()%>/Pages/Project.jsp" class="button special" >Start Creating Project</a> </p>
 
-<div style='padding-left:470px;text-align:center;position: absolute;top: 90%;'><progress max=100 value=0></progress></div>
+<div style='padding-left:510px;text-align:center;position: absolute;top: 90%;'><progress max=100 value=0></progress></div>
  						
    </form>
    
