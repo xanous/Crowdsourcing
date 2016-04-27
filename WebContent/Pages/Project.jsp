@@ -7,13 +7,28 @@
 <title>Page of creating project</title>
 <meta charset="UTF-8">
 <%@ include file="/include/css2.jsp" %>
+<link rel="stylesheet" href="<%= request.getContextPath()%>/MenuCreateProjet/css/style.css">
 </head>
 <body>
 <%@ include file="/include/headerRequester.jsp" %>
 
 <div id="main" class="wrapper style1">
 					<div class="container">
-						
+					
+<ol class="track-progress" data-steps="3">
+   <li class="done">
+    <span>Enter Informations</span>
+     <i></i>
+   </li><!--
+--><li class="done">
+     <span>Desgin Layout</span>
+   </li><!--
+--><li>
+     <span>Preview and finish</span>
+     <i></i>
+   </li>
+ </ol>
+<hr size="20" style='background:#e44c65;'>						
 <div  style='background-color:#525252;width: 1213px;height: 70px;'>Give a name To your Project</div>
    					
 <form class="input-append" action="<%= request.getContextPath()%>/include/next1.jsp" method="POST">
