@@ -1,0 +1,51 @@
+.track-progress {
+ 
+  overflow: hidden;
+}
+
+.track-progress[data-steps="3"] li  {
+  list-style-type: none;
+  display: inline-block;
+
+  position: absolute;
+  margin: 40;
+  padding: 10;
+
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+
+  background-color: #ff0080;
+  width: 33%;
+}
+.track-progress[data-steps="4"] li  {
+  list-style-type: none;
+  display: inline-block;
+
+  position: absolute;
+  margin: 40;
+  padding: 10;
+  
+
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+
+  background-color: #ff0080;
+  width: 25%;
+}
+.track-progress[data-steps="5"] li  {
+  list-style-type: none;
+  display: inline-block;
+
+  position: absolute;
+  margin: 40;
+  padding: 10;
+
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+
+  background-color: #ff0080;
+  width: 20%;
+}
