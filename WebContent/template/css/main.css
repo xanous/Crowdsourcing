@@ -2236,7 +2236,7 @@
 	input[type="password"],
 	input[type="email"],
 	select {
-		height: 3em;
+		height: 3.6em;
 	}
 
 	textarea {
@@ -2719,7 +2719,7 @@
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 300;
-		height: 2em;
+
 		line-height: 2em;
 		padding: 0 2.25em;
 		text-align: center;

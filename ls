@@ -1,0 +1,12 @@
+./WebContent/menuRequester/css/demo.css
+./WebContent/SignUp/css/style.css
+./WebContent/SignIn/css/style.css
+./WebContent/template/css/ie9.css
+./WebContent/template/css/main2.css
+./WebContent/template/css/main.css
+./WebContent/template/css/font-awesome.min.css
+./WebContent/template/css/ie8.css
+./WebContent/include/anass.css
+./WebContent/HomeRequester/css/slider.css
+./WebContent/HomeRequester/css/style.css
+./WebContent/MenuCreateProjet/css/style.css

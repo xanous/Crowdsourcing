@@ -65,9 +65,6 @@
 				    </select>
 				</span>
 		</div>
-
-
-		   
 		   <h3>By creating an account, you agree to our <span class="term"><a href="#">Terms & Conditions</a></span></h3>
 		   <div class="submit">
 			  <input type="submit" onclick="myFunction()" value="Create account" >
@@ -75,6 +72,5 @@
 		   <div class="clear"> </div>
 		</form>
 		</div>
-
 </body>
 </html>

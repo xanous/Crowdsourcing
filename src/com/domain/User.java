@@ -17,7 +17,15 @@ public class User {
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
-
+	
+	public String getLogin() {
+		return login;
+	}
+	
+	public void setLogin(String login) {
+		this.login = login;
+	}
+	
 	public String getPassword() {
 		return password;
 	}

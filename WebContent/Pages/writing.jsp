@@ -17,7 +17,7 @@
 <nav>					
 <ol class="track-progress" data-steps="3">
    <li class="done">
-    <span><a href="<%= request.getContextPath()%>/Pages/FormRequester.jsp">Enter Informations</a></span>
+    <span><a href="<%= request.getContextPath()%>/Pages/FormRequester.jsp">Enter Information</a></span>
      <i></i>
    </li><!--
 --><li class="done">
