@@ -52,10 +52,13 @@
  <legend>Setting of Hit</legend>
  <fieldset style='border-color:#e44c65; border: solid 3px;padding-left:80px;background-color:white'>
  <legend>Calcul of Reward</legend>
-<p style='padding-left:10px;'>Number of Items:<input type="number" id="nom1" min="1" max="10" value="1" ></p><br>
-<p style='padding-left:10px;'>Number of workers per Item:<input type="number" id="nom2" min="1"  max="2" value="1"></p><br>
-<p style='padding-left:10px;'>Number of Worker Submissions:<input type="text" id="nom3" placeholder="Number of Worker Submissions" style='float:left'></p>
-<p style='padding-left:10px;'>Reward per Submission:<input type="number" id="nom4" value="0.01" min="0.01" step="0.01"></p>
+ <label for="text" style='padding-left:10px;'>Number of Items:</label>
+<p style='padding-left:10px;'><input type="number" id="nom1" min="1" max="10" value="1" ></p><br>
+<label for="text" style='padding-left:10px;'>Number of workers per Item:</label>
+<p style='padding-left:10px;'><input type="number" id="nom2" min="1"  max="2" value="1"></p><br>
+<p style='padding-left:10px;'>Number of Worker Submissions:<input type="text" id="nom3" placeholder="Number of Worker Submissions"></p>
+<label for="text" style='padding-left:10px;'>Reward per Submission:</label>
+<p style='padding-left:10px;'><input type="number" id="nom4" value="0.01" min="0.01" step="0.01"></p>
 <p style='padding-left:10px;'>Total Worker Rewards:<input type="text" id="nom5" placeholder="Total worker Rewards"></p>
 <p style='padding-left:10px;'>Total Cost:<input type="text" id="nom6" placeholder="Total Cost"></p>
 <div style='background-color:#ff8080;'>You Should Pay:
@@ -64,18 +67,21 @@
 </fieldset>
 <fieldset style='border-color:#c0c0c0; border: solid 3px;padding-left:80px;background-color:white'>
  <legend>Time</legend>
-<p style='padding-left:10px;'>Time allotted per assignment:<input type="number" id="nom8" min="1" value="1" ><SELECT name="selection" style='margin-left:50%;margin-top:1%; height: 30px;'>
+ <label for="text" style='padding-left:10px;'>Time allotted per assignment:</label>
+<p style='padding-left:10px;'><input type="number" id="nom8" min="1" value="1" ><SELECT name="selection" style='margin-left:50%;margin-top:1%; height: 30px;'>
             <OPTION selected="selected">Days</OPTION>
             <OPTION>Hours</OPTION>
             <OPTION>Minutes</OPTION>
             </SELECT></p>
 <br>
-<p style='padding-left:10px;'>HIT expires in:<input type="number" id="nom9" min="1" value="1"><SELECT name="selection" style='margin-left:50%;margin-top:1%; height: 30px;'>
+<label for="text" style='padding-left:10px;'>HIT expires in:</label>
+<p style='padding-left:10px;'><input type="number" id="nom9" min="1" value="1"><SELECT name="selection" style='margin-left:50%;margin-top:1%; height: 30px;'>
             <OPTION selected="selected">Days</OPTION>
             <OPTION>Hours</OPTION>
             <OPTION>Minutes</OPTION>
             </SELECT></p><br>
-<p style='padding-left:10px;'>Auto-approve and pay Workers in:<input type="number" min="1" value="1" name="nom10"><SELECT name="selection" style='margin-left:50%;margin-top:1%; height: 30px;'>
+ <label for="text" style='padding-left:10px;'>Auto-approve and pay Workers in:</label>
+<p style='padding-left:10px;'><input type="number" min="1" value="1" name="nom10"><SELECT name="selection" style='margin-left:50%;margin-top:1%; height: 30px;'>
             <OPTION selected="selected">Days</OPTION>
             <OPTION>Hours</OPTION>
             <OPTION>Minutes</OPTION>
