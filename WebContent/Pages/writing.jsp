@@ -21,7 +21,7 @@
      <i></i>
    </li><!--
 --><li class="done">
-     <span><a href="<%= request.getContextPath()%>/Pages/Writing/writing.jsp">Desgin Layout</a></span>
+     <span><a href="<%= request.getContextPath()%>/Pages/writing.jsp">Desgin Layout</a></span>
    </li><!--
 --><li>
      <span><a href="#" onclick="MyFunction()">Preview and finish</a></span>
@@ -31,7 +31,7 @@
  </nav>
 <hr size="20" style='background:#e44c65;'>	
 
-<fieldset style='border-color:#e44c65; border-style: solid;padding-left:80px;background-color:white'>
+<fieldset style='border-color:#e44c65; border-style: solid;padding-left:80px;'>
  <legend>Name of the project</legend>
  
 <p style='padding-left:10px;'><input type="text" name="nom" id="text" value="<%= request.getParameter("nameproject") %>"></p>
@@ -39,7 +39,7 @@
 <div  style='background-color:#525252;width: 1213px;height: 70px;'>Instructions</div>
    					
 <form class="input-append" action="#" method="POST">
- <fieldset style='border-color:#e44c65; border-style: solid;padding-left:80px;background-color:white'>
+ <fieldset style='border-color:#e44c65; border-style: solid;padding-left:80px;'>
  <legend>Instructions</legend>
  
   <p style='padding-left:10px;'><textarea name="instructions"></textarea></p>
@@ -55,7 +55,8 @@
 
 
 
-<p style='padding-left:800px;margin-top:3%'><input type="submit" value="Save" class="button special"/>hh<button class="button special" style='height:37px;'>Preview</button></p>
+<p style='padding-left:800px;margin-top:3%'><input type="submit" value="Save" class="button special"/>
+<button class="button special" style='height:37px;'>Preview</button></p>
 
 </form>
 <%@ include file="/include/footer.jsp" %>

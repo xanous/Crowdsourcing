@@ -95,7 +95,7 @@
     </div>
     <p align="center"><img src="<%= request.getContextPath()%>/HomeRequester/images/flechee.gif"></p>
     <div style='background:#808080;'>
-    <p style='padding-left:1.5cm;font-family:"Times New Roman";font-size:110%' > ===>As a requester:</p>
+    
     <ul style='list-style: square;padding-left:1.5cm;'>
     <li tabindex="0" class="icon-dashboard"><span>You provide your categories, instructions.</span></li>
    <li tabindex="0" class="icon-customers"><span>You provide a reward to pay Workers based on similar work on "".</span></li>
