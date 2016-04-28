@@ -101,7 +101,7 @@
    <li tabindex="0" class="icon-customers"><span>You provide a reward to pay Workers based on similar work on "".</span></li>
     <li tabindex="0" class="icon-customers"><span>Only Workers who have the Masters Qualification can complete your tasks.</span></li>
     <li tabindex="0" class="icon-users"><span>Work is automatically approved quickly so Workers stay motivated.</span></li> <br>
-    <a href="<%= request.getContextPath()%>/Pages/Requester.jsp" class="button special">Get Started</a>
+    <a href="<%= request.getContextPath()%>/Pages/RequesterMenu.jsp" class="button special">Get Started</a>
 			
   </ul>
   
