@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated 26 avr. 2016 02:23:45 by Hibernate Tools 3.5.0.Final -->
+<!-- Generated 29 avr. 2016 18:25:51 by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
     <class name="com.domain.Requester" table="Requester">
         <id name="login" type="java.lang.String" access="field">
             <column name="LOGIN" />
-            <generator class="assigned" />
+            <generator class="increment" />
         </id>
         <property name="password" type="java.lang.String">
             <column name="PASSWORD" />
@@ -17,5 +17,5 @@
         <property name="lastName" type="java.lang.String" access="field">
             <column name="LASTNAME" />
         </property>
-    </class>
+        </class>
 </hibernate-mapping>

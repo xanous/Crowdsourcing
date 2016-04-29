@@ -17,7 +17,11 @@
 <nav>					
 <ol class="track-progress" data-steps="3">
    <li class="done">
+<<<<<<< HEAD
     <span><a href="<%= request.getContextPath()%>/Pages/FormRequester.jsp">Enter Informations</a></span>
+=======
+    <span><a href="<%= request.getContextPath()%>/Pages/FormRequester.jsp">Enter Information</a></span>
+>>>>>>> master
      <i></i>
    </li><!--
 --><li class="done">
@@ -38,7 +42,11 @@
  </fieldset>					
 <div  style='background-color:#525252;width: 1213px;height: 70px;'>Instructions</div>
    					
+<<<<<<< HEAD
 <form class="input-append" action="#" method="POST">
+=======
+<form class="input-append" action="" method="POST">
+>>>>>>> master
  <fieldset style='border-color:#e44c65; border-style: solid;padding-left:80px;background-color:white'>
  <legend>Instructions</legend>
  
@@ -55,7 +63,11 @@
 
 
 
+<<<<<<< HEAD
 <p style='padding-left:800px;margin-top:3%'><input type="submit" value="Save" class="button special"/>hh<button class="button special" style='height:37px;'>Preview</button></p>
+=======
+<p style='padding-left:800px;margin-top:3%'><input type="submit" value="Save" class="button special"/><button class="button special" style='height:37px;'>Preview</button></p>
+>>>>>>> master
 
 </form>
 <%@ include file="/include/footer.jsp" %>

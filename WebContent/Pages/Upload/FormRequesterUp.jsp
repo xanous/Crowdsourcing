@@ -21,9 +21,13 @@
     <span><a href="<%= request.getContextPath()%>/Pages/FormRequesterUp.jsp">Enter Informations</a></span>
      <i></i>
    </li><!--
+<<<<<<< HEAD
 --><li class="done">
      <span><a href="<%= request.getContextPath()%>/Pages/Upload/Upload.jsp">Desgin Layout</a></span>
    </li><!--
+=======
+--><!--
+>>>>>>> master
 --><li>
      <span><a href="#">Preview and finish</a></span>
      <i></i>
@@ -31,6 +35,10 @@
  </ol>
  </nav>
 <hr size="20" style='background:#e44c65;'>						
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 <div  style='background-color:#525252;width: 1213px;height: 70px;'>Give a name To your Project</div>
    					
 <form class="input-append" action="<%= request.getContextPath()%>/Pages/writing.jsp" method="POST">
@@ -43,17 +51,28 @@
    <fieldset style='border-color:#e44c65; border-style: solid;padding-left:80px;background-color:white'>
  <legend>Description of the Hit</legend>
  <label for="text" style='padding-left:10px;'>Title</label>
+<<<<<<< HEAD
   <p style='padding-left:10px;'><input type="text" name="nameproject" id="text" placeholder="Type the Title of your Hit"></p>
   <label for="text" style='padding-left:10px;'>Description</label>
   <p style='padding-left:10px;'><input type="text" name="nameproject" id="text" placeholder="Type a description for your Hit"></p>
  <label for="text" style='padding-left:10px;'>KeyWords</label>
   <p style='padding-left:10px;'><input type="text" name="nameproject" id="text" placeholder="Type some keywords for your Hit"></p>
+=======
+  <p style='padding-left:10px;'><input type="text" name="title" id="text" placeholder="Type the Title of your Hit"></p>
+  <label for="text" style='padding-left:10px;'>Description</label>
+  <p style='padding-left:10px;'><input type="text" name="description" id="text" placeholder="Type a description for your Hit"></p>
+    
+ <label for="text" style='padding-left:10px;'>KeyWords</label>
+  <p style='padding-left:10px;'><input type="text" name="keywords" id="text" placeholder="Type some keywords for your Hit"></p>
+ 
+>>>>>>> master
  </fieldset>
  <div  style='background-color:#525252;width: 1213px;height: 70px;'>Setting Up your Hit</div>
  <fieldset style='border-color:#e44c65; border-style: solid;padding-left:80px;'>
  <legend>Setting of Hit</legend>
  <fieldset style='border-color:#e44c65; border: solid 3px;padding-left:80px;background-color:white'>
  <legend>Calcul of Reward</legend>
+<<<<<<< HEAD
 <p style='padding-left:10px;'>Number of Items:<input type="number" id="nom1" min="1" max="10" value="1" ></p><br>
 <p style='padding-left:10px;'>Number of workers per Item:<input type="number" id="nom2" min="1"  max="2" value="1"></p><br>
 <p style='padding-left:10px;'>Number of Worker Submissions:<input type="text" id="nom3" placeholder="Number of Worker Submissions" style='float:left'></p>
@@ -62,22 +81,44 @@
 <p style='padding-left:10px;'>Total Cost:<input type="text" id="nom6" placeholder="Total Cost"></p>
 <div style='background-color:#ff8080;'>You Should Pay:
 <p style='padding-left:10px;'><input type="text" id="nom7" style="font-weight:bold;"></p>
+=======
+<p style='padding-left:10px;'>Number of Items:<input type="number" name="number" id="nom1" min="1" max="10" value="1" ></p><br>
+<p style='padding-left:10px;'>Number of workers per Item:<input type="number" name="number1" id="nom2" min="1"  max="2" value="1"></p><br>
+<p style='padding-left:10px;'>Number of Worker Submissions:<input type="text" name="number2" id="nom3" placeholder="Number of Worker Submissions" style='float:left'></p>
+<p style='padding-left:10px;'>Reward per Submission:<input type="number" name="number3" id="nom4" value="0.01" min="0.01" step="0.01"></p>
+<p style='padding-left:10px;'>Total Worker Rewards:<input type="text" name="number4" id="nom5" placeholder="Total worker Rewards"></p>
+<p style='padding-left:10px;'>Total Cost:<input type="text" name="number5" id="nom5" placeholder="Total Cost"></p>
+<div style='background-color:#ff8080;'>You Should Pay:
+<p style='padding-left:10px;'><input type="text" name="number6" id="nom7" style="font-weight:bold;"></p>
+>>>>>>> master
 </div>
 </fieldset>
 <fieldset style='border-color:#c0c0c0; border: solid 3px;padding-left:80px;background-color:white'>
  <legend>Time</legend>
+<<<<<<< HEAD
 <p style='padding-left:10px;'>Time allotted per assignment:<input type="number" id="nom8" min="1" value="1" ><SELECT name="selection" style='margin-left:50%;margin-top:1%; height: 30px;'>
+=======
+<p style='padding-left:10px;'>Time allotted per assignment:<input type="number" name="number7" id="nom8" min="1" value="1" ><SELECT name="selection" style='margin-left:50%;margin-top:1%; height: 30px;'>
+>>>>>>> master
             <OPTION selected="selected">Days</OPTION>
             <OPTION>Hours</OPTION>
             <OPTION>Minutes</OPTION>
             </SELECT></p>
 <br>
+<<<<<<< HEAD
 <p style='padding-left:10px;'>HIT expires in:<input type="number" id="nom9" min="1" value="1"><SELECT name="selection" style='margin-left:50%;margin-top:1%; height: 30px;'>
+=======
+<p style='padding-left:10px;'>HIT expires in:<input type="number" name="number8" id="nom9" min="1" value="1"><SELECT name="selection" style='margin-left:50%;margin-top:1%; height: 30px;'>
+>>>>>>> master
             <OPTION selected="selected">Days</OPTION>
             <OPTION>Hours</OPTION>
             <OPTION>Minutes</OPTION>
             </SELECT></p><br>
+<<<<<<< HEAD
 <p style='padding-left:10px;'>Auto-approve and pay Workers in:<input type="number" min="1" value="1" name="nom10"><SELECT name="selection" style='margin-left:50%;margin-top:1%; height: 30px;'>
+=======
+<p style='padding-left:10px;'>Auto-approve and pay Workers in:<input type="number"  min="1" value="1" name="nom9"><SELECT name="selection" style='margin-left:50%;margin-top:1%; height: 30px;'>
+>>>>>>> master
             <OPTION selected="selected">Days</OPTION>
             <OPTION>Hours</OPTION>
             <OPTION>Minutes</OPTION>
@@ -145,7 +186,11 @@ function sum() {
  }
 </script>
 
+<<<<<<< HEAD
 <p style='padding-left:800px;margin-top:3%'><input type="submit" value="Save" class="button special"/>hh<button class="button special" style='height:37px;'>Design Layout</button></p>
+=======
+<p style='padding-left:800px;margin-top:3%'><input type="submit" value="Save" class="button special"/><button class="button special" style='height:37px;'>Design Layout</button></p>
+>>>>>>> master
 
 </form>
 <%@ include file="/include/footer.jsp" %>

@@ -11,6 +11,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.domain.Requester;
 import com.domain.User;
@@ -76,13 +77,23 @@ public class SingUpController extends HttpServlet {
 				Requester userR = new Requester(request.getParameter("email"), hexString.toString(),
 				request.getParameter("fname"),request.getParameter("lname"));
 				service.add(userR);
-				request.getRequestDispatcher("Pages/SignUp.jsp").forward(request, response);
+				HttpSession session = request.getSession(false);
+				if(session != null )
+						session.invalidate();
+				session = request.getSession(true);
+				session.setAttribute("login", user.getLogin());
+				request.getRequestDispatcher("Pages/HomeRequester.jsp").forward(request, response);
 			}
 			else if(request.getParameter("type_account").equals("Worker")){
 				Worker userW = new Worker(request.getParameter("email"), hexString.toString(),
 				request.getParameter("fname"),request.getParameter("lname"));
 				service.add(userW);
-				request.getRequestDispatcher("Pages/SignUp.jsp").forward(request, response);
+				HttpSession session = request.getSession(false);
+				if(session != null )
+						session.invalidate();
+				session = request.getSession(true);
+				session.setAttribute("login", user.getLogin());
+				request.getRequestDispatcher("Pages/HomeWorker.jsp").forward(request, response);
 			}
 		}
 	}

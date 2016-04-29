@@ -5,9 +5,13 @@
 			<li><a href="<%= request.getContextPath()%>/Pages/RequesterMenu.jsp">Create Project</a></li>
 			<li><a href="#">Account</a></li>
 			<li><a href="#">Setting</a></li>
+<<<<<<< HEAD
 			
 			<li><a href="<%= request.getContextPath()%>/index.jsp" class="button special">Logout</a></li>
 			
+=======
+			<li><a href="<%= request.getContextPath()%>/index.jsp" class="button special">Log Out</a></li>
+>>>>>>> master
 		</ul>
 	</nav>
 </header>

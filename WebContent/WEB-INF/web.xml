@@ -22,6 +22,20 @@
 		<servlet-name>LogInWorkerController</servlet-name>
 		<servlet-class>com.controller.LogInWorkerController</servlet-class>
 	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>AjouterRequest</display-name>
+		<servlet-name>AjouterRequest</servlet-name>
+		<servlet-class>com.controller.AjouterRequest</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>AjouterRequesterToRequest</display-name>
+		<servlet-name>AjouterRequesterToRequest</servlet-name>
+		<servlet-class>com.controller.AjouterRequesterToRequest</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>SingUpController</servlet-name>
 		<url-pattern>/SignUp</url-pattern>
@@ -33,6 +47,14 @@
 	<servlet-mapping>
 		<servlet-name>LogInWorkerController</servlet-name>
 		<url-pattern>/LogInWorker</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AjouterRequest</servlet-name>
+		<url-pattern>/AjouterRequest</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AjouterRequesterToRequest</servlet-name>
+		<url-pattern>/AjouterRequesterToRequest</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>

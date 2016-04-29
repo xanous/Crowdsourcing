@@ -9,6 +9,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.domain.User;
 import com.domain.Worker;
@@ -62,7 +63,12 @@ public class LogInWorkerController extends HttpServlet {
 			request.getRequestDispatcher("Pages/LogInRequester.jsp").forward(request, response);;
 		}
 		else if(pass.equals(user.getPassword())){
-			response.sendRedirect(request.getContextPath()+"/Pages/LogInRequester.jsp");
+			HttpSession session = request.getSession(false);
+			if(session != null )
+					session.invalidate();
+			session = request.getSession(true);
+			session.setAttribute("login", user.getLogin());
+			response.sendRedirect(request.getContextPath()+"/Pages/HomeWorker.jsp");
 		}
 		else{
 			request.setAttribute("username_pass_error", "username_pass_error");
