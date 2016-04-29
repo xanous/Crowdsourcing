@@ -31,7 +31,7 @@
  </ol>
  </nav>
 <hr size="20" style='background:#e44c65;'>						
-<div  style='background-color:#525252;width: 1213px;height: 70px;'>Give a name To your Project</div>
+<div  style='background-color:#525252;width: 100%;height: 100%;'>Give a name to your Project</div>
    					
 <form class="input-append" action="<%= request.getContextPath()%>/Pages/writing.jsp" method="POST">
  <fieldset style='border-color:#e44c65; border-style: solid;padding-left:80px;background-color:white'>
