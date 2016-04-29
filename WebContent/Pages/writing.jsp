@@ -55,7 +55,7 @@
 
 
 
-<p style='padding-left:800px;margin-top:3%'><input type="submit" value="Save" class="button special"/>hh<button class="button special" style='height:37px;'>Preview</button></p>
+<p style='padding-left:800px;margin-top:3%'><input type="submit" value="Save" class="button special"/><button class="button special" style='height:37px;'>Preview</button></p>
 
 </form>
 <%@ include file="/include/footer.jsp" %>
