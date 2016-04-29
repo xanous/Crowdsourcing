@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated 29 avr. 2016 12:51:22 by Hibernate Tools 3.5.0.Final -->
+<!-- Generated 29 avr. 2016 20:14:09 by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
     <class name="com.domain.Request" table="REQUEST">
         <id name="idRequest" type="int">
@@ -50,8 +50,11 @@
         <property name="paye" type="java.lang.String">
             <column name="PAYE" />
         </property>
-        <many-to-one name="request" class="com.domain.Requester" fetch="join">
-            <column name="REQUEST" />
-        </many-to-one>
+        <property name="nomRequester" type="java.lang.String">
+            <column name="NOMREQUESTER" />
+        </property>
+        <property name="instruction" type="java.lang.String">
+            <column name="INSTRUCTION" />
+        </property>
     </class>
 </hibernate-mapping>

@@ -24,7 +24,8 @@ public class Request {
 	private int AutoApprove; 
 	private String TotalCost;
 	private String paye;
-	private Requester request;
+	private String nomRequester;
+	private String instruction;
 	public String getTotalCost() {
 		return TotalCost;
 	}
@@ -104,11 +105,12 @@ public class Request {
 	public void setAutoApprove(int autoApprove) {
 		AutoApprove = autoApprove;
 	}
-	public Requester getRequest() {
-		return request;
+	
+	public String getNomRequester() {
+		return nomRequester;
 	}
-	public void setRequest(Requester request) {
-		this.request = request;
+	public void setNomRequester(String nomRequester) {
+		this.nomRequester = nomRequester;
 	}
 	public Request() {
 		super();
@@ -119,6 +121,12 @@ public class Request {
 	}
 	public void setTotalWorkerRewards(String totalWorkerRewards2) {
 		TotalWorkerRewards = totalWorkerRewards2;
+	}
+	public String getInstruction() {
+		return instruction;
+	}
+	public void setInstruction(String instruction) {
+		this.instruction = instruction;
 	}
 	
 

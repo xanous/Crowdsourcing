@@ -76,7 +76,7 @@ public class AjouterRequest extends HttpServlet {
          String login = (String) sess.getAttribute("login");
          
          requesterservice.addRequest( nameprojet,description,titre,keywords,numberItem,numberWorkerItem,numberWorkerSubmission,
-        rewardSubmission,TotalWorkerRewards,TotalCost, Pay,TimeAllottedAssignment, HITExpiresIn,AutoApprove);
+        rewardSubmission,TotalWorkerRewards,TotalCost, Pay,TimeAllottedAssignment, HITExpiresIn,AutoApprove,login);
          response.sendRedirect(request.getContextPath()+"/Pages/writing.jsp");
       //   request.getRequestDispatcher(request.getContextPath()+"/Pages/writing.jsp").forward(request, response);
          

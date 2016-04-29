@@ -38,7 +38,7 @@
  </fieldset>					
 <div  style='background-color:#525252;width: 1213px;height: 70px;'>Instructions</div>
    					
-<form class="input-append" action="#" method="POST">
+<form class="input-append" action="" method="POST">
  <fieldset style='border-color:#e44c65; border-style: solid;padding-left:80px;background-color:white'>
  <legend>Instructions</legend>
  
