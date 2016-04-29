@@ -267,6 +267,7 @@ function sum() {
 
 
 <%@ include file="/include/footer.jsp" %>
-
+</div>
+</div>
 </body>
 </html>
