@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@page import="com.domain.Request"%>
+<%@page import="java.util.List"%>
+<%@page import="com.util.Hibernate"%>
+<%@page import="org.hibernate.Criteria"%>
+<%@page import ="org.hibernate.Session" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -36,15 +41,27 @@
  </nav>
 <hr size="20" style='background:#e44c65;'>	
 
-<fieldset style='border-color:#e44c65; border-style: solid;padding-left:80px;'>
- <legend>Name of the project</legend>
+<fieldset>
  
-<p style='padding-left:10px;'><input type="text" name="nom" id="text" value="<%= request.getParameter("nameproject") %>"></p>
- </fieldset>					
-<div  style='background-color:#525252;width: 1213px;height: 70px;'>Instructions</div>
+<legend style='padding-left:5px;padding-right:5px;'>Name of the project</legend>
+ 
+ <table> 
+ 	<tr> <td>
+	  	<input type="text" name="nom" id="text" value="">
+	  	</td>
+  	</tr>
+  	</table>
+
+ </fieldset>	
+ 	
+ 	<br>
+ 			
+<fieldset class="table2">
+	<legend>Instructions</legend>
    					
 <<<<<<< HEAD
 <form class="input-append" action="#" method="POST">
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <form class="input-append" action="" method="POST">
@@ -56,18 +73,30 @@
  <legend>Instructions</legend>
  
   <p style='padding-left:10px;'><textarea name="instructions"></textarea></p>
+=======
+  <table>
+		 <tr>
+		 <td>  <textarea name="instructions"></textarea>
+		 </td>
+		 </tr>
+		 </table>
+>>>>>>> master
  </fieldset>
- 
- <div  style='background-color:#525252;width: 1213px;height: 70px;'>Area for response</div>
- <fieldset style='border-color:#e44c65; border-style: solid;padding-left:80px;'>
+ <br>
+ <fieldset>
  <legend>Response</legend>
- <label for="text" style='padding-left:10px;'>Write your Response</label>
-  <p style='padding-left:10px;'><textarea name="instructions" readonly></textarea></p>
+ <table>
+		
+		 <td>  <textarea name="instructions" placeholder="Write your Response" readonly></textarea>
+		 </td>
+		 </tr>
+		 </table>
 </fieldset>
 
 
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <p style='padding-left:800px;margin-top:3%'><input type="submit" value="Save" class="button special"/>hh<button class="button special" style='height:37px;'>Preview</button></p>
@@ -79,6 +108,15 @@
 <button class="button special" style='height:37px;'>Preview</button></p>
 >>>>>>> master
 
+=======
+<center>
+<table>
+<tr>
+<td colspan="2"><input style='width: 150px;' type="submit" value="Next" class="button special"/></td>
+</tr>
+</table>
+</center>
+>>>>>>> master
 </form>
 <%@ include file="/include/footer.jsp" %>
 

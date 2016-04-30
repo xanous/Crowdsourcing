@@ -5,9 +5,15 @@
 <<<<<<< HEAD
  <session-factory>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <!-- Database connection settings -->
   <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
   <property name="connection.url">jdbc:mysql://localhost/Crowdsourcing</property>
+=======
+  <!-- Database connection settings -->
+  <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="connection.url">jdbc:mysql://localhost/base1</property>
+>>>>>>> master
   <property name="connection.username">root</property>
   <property name="connection.password"/>
   <!-- JDBC connection pool (use the built-in) -->
@@ -22,6 +28,7 @@
   <property name="show_sql">true</property>
   <!-- Drop and re-create the database schema on startup -->
   <property name="hbm2ddl.auto">update</property>
+<<<<<<< HEAD
   <mapping class="com.domain.User" resource="com/domain/User.hbm.xml"/>
   <mapping class="com.domain.Categorie" resource="com/domain/Categorie.hbm.xml"/>
   <mapping class="com.domain.Request" resource="com/domain/Request.hbm.xml"/>
@@ -78,6 +85,12 @@
   <mapping class="com.domain.Request" resource="com/domain/Request.hbm.xml"/>
 =======
 >>>>>>> 137835ef4f547f163fc4dca42f09bbad3fee11c5
+>>>>>>> master
+=======
+  <mapping class="com.domain.User" resource="com/domain/User.hbm.xml"/>
+  <mapping class="com.domain.Worker" resource="com/domain/Worker.hbm.xml"/>
+  <mapping class="com.domain.Requester" resource="com/domain/Requester.hbm.xml"/>
+  <mapping class="com.domain.Request" resource="com/domain/Request.hbm.xml"/>
 >>>>>>> master
  </session-factory>
 </hibernate-configuration>

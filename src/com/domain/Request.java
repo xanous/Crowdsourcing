@@ -1,8 +1,9 @@
 package com.domain;
 
-import java.util.ArrayList;
+import java.util.Date;
 
 public class Request {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	private int idRequest;
 	public int getIdRequest() {
@@ -11,6 +12,9 @@ public class Request {
 	public void setIdRequest(int idRequest) {
 		this.idRequest = idRequest;
 	}
+=======
+	private int idRequest;
+>>>>>>> master
 	private String nomprojet;
 	private String description;
 	private String tags;
@@ -27,6 +31,17 @@ public class Request {
 	private String paye;
 	private String nomRequester;
 	private String instruction;
+<<<<<<< HEAD
+=======
+	private Date dateCreation;
+	private String firstName;
+	public int getIdRequest() {
+		return idRequest;
+	}
+	public void setIdRequest(int idRequest) {
+		this.idRequest = idRequest;
+	}
+>>>>>>> master
 	public String getTotalCost() {
 		return TotalCost;
 	}
@@ -58,6 +73,7 @@ public class Request {
 	public void setTags(String keywords) {
 		this.tags = keywords;
 	}
+<<<<<<< HEAD
 =======
 	Long idRequest;
 	 String title;
@@ -70,6 +86,8 @@ public class Request {
 		this.idRequest = idRequest;
 	}
 >>>>>>> master
+=======
+>>>>>>> master
 	public String getTitle() {
 		return title;
 	}
@@ -77,6 +95,9 @@ public class Request {
 		this.title = title;
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 	public int getNumberItem() {
 		return numberItem;
 	}
@@ -125,6 +146,7 @@ public class Request {
 	}
 	public void setNomRequester(String nomRequester) {
 		this.nomRequester = nomRequester;
+<<<<<<< HEAD
 =======
 	public String getDescription() {
 		return Description;
@@ -138,12 +160,17 @@ public class Request {
 	public void setCategorie(Categorie categorie) {
 		this.categorie = categorie;
 >>>>>>> master
+=======
+>>>>>>> master
 	}
 	public Request() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 	public String getTotalWorkerRewards() {
 		return TotalWorkerRewards;
 	}
@@ -156,11 +183,27 @@ public class Request {
 	public void setInstruction(String instruction) {
 		this.instruction = instruction;
 	}
+<<<<<<< HEAD
 	
 
 =======
 	
 >>>>>>> master
 	
+=======
+	public Date getDateCreation() {
+		return dateCreation;
+	}
+	public void setDateCreation(Date dateCreation) {
+		this.dateCreation = dateCreation;
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+>>>>>>> master
 	
 }
+
