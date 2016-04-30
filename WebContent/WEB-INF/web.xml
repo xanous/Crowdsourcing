@@ -4,9 +4,30 @@
 	<servlet>
 		<description>
 		</description>
-		<display-name>SignInContorler</display-name>
-		<servlet-name>SignInContorler</servlet-name>
-		<servlet-class>com.controler.SignInContorler</servlet-class>
+		<display-name>SingUpController</display-name>
+		<servlet-name>SingUpController</servlet-name>
+		<servlet-class>com.controller.SingUpController</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>LogInRequesterController</display-name>
+		<servlet-name>LogInRequesterController</servlet-name>
+		<servlet-class>com.controller.LogInRequesterController</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>LogInWorkerController</display-name>
+		<servlet-name>LogInWorkerController</servlet-name>
+		<servlet-class>com.controller.LogInWorkerController</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>PasswordUpdateController</display-name>
+		<servlet-name>PasswordUpdateController</servlet-name>
+		<servlet-class>com.controller.PasswordUpdateController</servlet-class>
 	</servlet>
 	<servlet>
 		<description>
@@ -37,12 +58,20 @@
 		<servlet-class>com.controler.CRequest</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>SignInContorler</servlet-name>
-		<url-pattern>/SignInContorler</url-pattern>
+		<servlet-name>SingUpController</servlet-name>
+		<url-pattern>/SignUp</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
-		<servlet-name>SignInContorler</servlet-name>
-		<url-pattern>/SignIn</url-pattern>
+		<servlet-name>LogInRequesterController</servlet-name>
+		<url-pattern>/LogInRequester</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LogInWorkerController</servlet-name>
+		<url-pattern>/LogInWorker</url-pattern>
+	</servlet-mapping>
+		<servlet-mapping>
+		<servlet-name>PasswordUpdateController</servlet-name>
+		<url-pattern>/PasswordUpdate</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>ForgotPassword</servlet-name>

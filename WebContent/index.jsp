@@ -4,6 +4,7 @@
 <html>
 <head>
 <title>My Template</title>
+<!-- modif-->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <%@ include file="/include/css.jsp" %>
