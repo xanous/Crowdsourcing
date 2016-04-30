@@ -38,6 +38,8 @@
 
         <div class="form__field">
           <input type="submit" value="Sign In">
+              <a href="forgote_password.html">Forgot your password?</a>
+                  
         </div>
 
       </form>

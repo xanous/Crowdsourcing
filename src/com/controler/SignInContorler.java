@@ -6,6 +6,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Date;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -56,10 +57,14 @@ public class SignInContorler extends HttpServlet {
 		for (int i = 0; i < hash.length; i++) {
 			hexString.append(Integer.toString((hash[i] & 0xff) + 0x100, 16).substring(1));
 	        }
-		User user = new User(request.getParameter("email"), hexString.toString(), "a", "a", new Date());
+		User user = new User(request.getParameter("email"), hexString.toString(), request.getParameter("fname"),request.getParameter("lname"), new Date());
 		UserService service1 = new UserService();
 		
 		service1.add(user);
+		RequestDispatcher dispatcher=request.getRequestDispatcher("Pages/SignIn.jsp");
+		dispatcher.forward(request, response);
+
+		
 	}
 
 }

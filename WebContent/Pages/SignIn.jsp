@@ -41,7 +41,8 @@
 		   </div>
 		   <div class="lable-2">
 		        <input type="text" class="text" name="email" value="your@email.com " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'your@email.com ';}">
-		        <input type="password" class="text" name="password" value="Password " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password ';}">
+		        <input type="password" class="text" name="password" value="Password " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password ';}">		        
+		  
 		   </div>
 		   <h3>By creating an account, you agree to our <span class="term"><a href="#">Terms & Conditions</a></span></h3>
 		   <div class="submit">
