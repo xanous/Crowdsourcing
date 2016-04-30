@@ -1,5 +1,12 @@
+<%@page import="java.util.Calendar"%>
+<%@page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@page import="com.domain.Request"%>
+<%@page import="java.util.List"%>
+<%@page import="com.util.Hibernate"%>
+<%@page import="org.hibernate.Criteria"%>
+<%@page import ="org.hibernate.Session" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -21,10 +28,18 @@
 </style>
 </head>
 <body>
-<%@ include file="/include/headerRequester.jsp" %>
+<%@ include file="/include/headerWorker.jsp" %>
 
 
 <div id="main" class="wrapper style1">
+<%
+Session sessionH =  Hibernate.getSessionFactory().getCurrentSession();
+ sessionH.beginTransaction();
+List<Request> requestH =sessionH.createQuery("from Request").list();
+
+for(Request requests :requestH){
+	
+%>
 					<div class="container">
 					<div class ="div-request">
 <details>
@@ -32,26 +47,28 @@
 <table width="100%">
 
 	<tr>
-	<td colspan="2" class="titre1">Projet 1</td>
-	<td class="titre2"><a href=../index.jsp>take the hit</a></td>
+	<td colspan="2" class="titre1">Projet 1</td><td class="titre2"><input style='width: 150px;' type="submit" value="Repondre" class="button special"/></td>
 	</tr>
 	<tr>
-	<td class="td1"><label>Requester:</label></td>
-	<td class="td2"><label>Date</label></td>
-	<td class="td3"><label>Reward:</label></td>
+	<td class="td1"><label>Requester: <%out.print(requests.getNomRequester()); %></label></td>
+	<td class="td2"><label>Date: <%out.print(requests.getDateCreation()); %></label></td>
+	<td class="td3"><label>Reward: <%out.print(requests.getRewardSubmission()); %></label></td>
 	</tr>
 </table>
 </summary>
 <table width="100%">
 	<tr>
 	<td class="td1"><label>Keywords:</label></td>
-	<td class="td4" colspan="3"><label>Description:</label></td>
+	<td class="td4" colspan="3"><label>Description:  <%out.print(requests.getDescription()); %></label></td>
+	
 	</tr>
 </table>
 </details>
 </div>
 
 <br>
+
+<%} %>
 <br>
 <!-- Code pour summury -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>

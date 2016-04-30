@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30 avr. 2016 04:26:37 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.domain.Request" table="REQUEST">
+        <id name="idRequest" type="int">
+            <column name="IDREQUEST" />
+            <generator class="increment" />
+        </id>
+        <property name="nomprojet" type="java.lang.String">
+            <column name="NOMPROJET" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="tags" type="java.lang.String">
+            <column name="TAGS" />
+        </property>
+        <property name="title" type="java.lang.String">
+            <column name="TITLE" />
+        </property>
+        <property name="numberItem" type="int">
+            <column name="NUMBERITEM" />
+        </property>
+        <property name="numberWorkerItem" type="int">
+            <column name="NUMBERWORKERITEM" />
+        </property>
+        <property name="numberWorkerSubmission" type="int">
+            <column name="NUMBERWORKERSUBMISSION" />
+        </property>
+        <property name="rewardSubmission" type="java.lang.String">
+            <column name="REWARDSUBMISSION" />
+        </property>
+        <property name="TotalWorkerRewards" type="java.lang.String">
+            <column name="TOTALWORKERREWARDS" />
+        </property>
+        <property name="TimeAllottedAssignment" type="int">
+            <column name="TIMEALLOTTEDASSIGNMENT" />
+        </property>
+        <property name="HITExpiresIn" type="int">
+            <column name="HITEXPIRESIN" />
+        </property>
+        <property name="AutoApprove" type="int">
+            <column name="AUTOAPPROVE" />
+        </property>
+        <property name="TotalCost" type="java.lang.String">
+            <column name="TOTALCOST" />
+        </property>
+        <property name="paye" type="java.lang.String">
+            <column name="PAYE" />
+        </property>
+        <property name="nomRequester" type="java.lang.String">
+            <column name="NOMREQUESTER" />
+        </property>
+        <property name="instruction" type="java.lang.String">
+            <column name="INSTRUCTION" />
+        </property>
+        <property name="dateCreation" type="java.util.Date">
+            <column name="DATECREATION" />
+        </property>
+        <property name="firstName" type="java.lang.String">
+            <column name="FIRSTNAME" />
+        </property>
+    </class>
+</hibernate-mapping>
