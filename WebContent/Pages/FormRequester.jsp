@@ -8,6 +8,7 @@
 <meta charset="UTF-8">
 <%@ include file="/include/css2.jsp" %>
 <link rel="stylesheet" href="<%= request.getContextPath()%>/MenuCreateProjet/css/style.css">
+<link rel="stylesheet" href="<%= request.getContextPath()%>/include/formRequest.css">
 
 </head>
 <body>
@@ -38,6 +39,7 @@
      <i></i>
    </li>
  </ol>
+<<<<<<< HEAD
  </nav>
 <hr size="20" style='background:#e44c65;'>						
 <div  style='background-color:#525252;width: 1213px;height: 70px;'>Give a name To your Project</div>
@@ -129,7 +131,158 @@
             <OPTION>Minutes</OPTION>
             </SELECT></p>
 </fieldset>
+=======
+ </nav>					
+
+<br>
+  					
+<form class="input-append" action="<%= request.getContextPath()%>/Pages/writing.jsp" method="POST">
+
+
+ <fieldset>
+ 	<legend style='padding-left:5px;padding-right:5px;'>Name of the project</legend>
+ 	 <table> 
+ 	<tr><td>
+	 	<label for="text" style='padding-left:10px;'>What would you like to call your project?</label>
+	 	</td><td>
+	  	<input type="text" name="nameproject" id="text" placeholder="Type the name of your project">
+	  	</td>
+  	</tr>
+  	</table>
+ </fieldset>
+ 
+ <br>
+ 
+ <fieldset class="table2">
+	 <legend>Description of the Hit</legend>
+	 <table>
+		 <tr>
+		 <td><label for="text" style='padding-left:10px;'>Title</label></td>
+		 <td><input type="text" name="nameproject" id="text" placeholder="Type the Title of your Hit"></td>
+		 </tr>
+		 
+		 <tr>
+		 <td><label for="text" style='padding-left:10px;'>Description</label></td>
+		 <td><input type="text" name="nameproject" id="text" placeholder="Type a description for your Hit"></td>
+		 </tr>
+		 
+		 <tr>
+		 <td><label for="text" style='padding-left:10px;'>KeyWords</label></td>
+		 <td><input type="text" name="nameproject" id="text" placeholder="Type some keywords for your Hit"></td>
+		 </tr>
+	 </table>
+ </fieldset>
+
+<br>
+ 
+ <fieldset>
+ <legend>Setting of Hit</legend>
+ 
+	 <fieldset style='border-color:#e44c65; border: solid 3px;'>
+	 	<legend>Calcul of Reward</legend>
+	 	<table>
+			<tr>
+			<td><label>Number of Items:</label></td>
+			<td><input type="number" id="nom1" min="1" max="10" value="1" ></td>
+			</tr>
+			
+			<tr>
+			<td><label>Number of workers per Item:</label></td>
+			<td><input type="number" id="nom2" min="1"  max="2" value="1"></td>
+			</tr>
+			
+			<tr>
+			<td><label>Number of Worker Submissions:</label></td>
+			<td><input type="text" id="nom3" placeholder="Number of Worker Submissions"></td>
+			</tr>
+			
+			<tr>
+			<td><label>Reward per Submission:</label></td>
+			<td><input type="number" id="nom4" value="0.01" min="0.01" step="0.01"></td>
+			</tr>
+			
+			<tr>
+			<td><label>Total Worker Rewards:</label></td>
+			<td><input type="text" id="nom5" placeholder="Total worker Rewards"></td>
+			</tr>
+			
+			<tr>
+			<td><label>Total Cost:</label></td>
+			<td><input type="text" id="nom6" placeholder="Total Cost"></td>
+			</tr>
+			
+			<tr>
+			<td colspan="2">
+			<div class="pay-div">
+				<label class="pay-label">You Should Pay :</label>
+				<input type="text" id="nom7" style="font-weight:bold;">
+			</div>
+			</td>
+			</tr>
+			
+		</table>
+	</fieldset>
+
+	 <fieldset style='border-color:#c0c0c0; border: solid 3px;'>
+	 	<legend>Time</legend>
+	 	<table>
+		 	<tr>
+		 	<td><label>Time allotted per assignment:</label></td>
+		 	<td>
+				<input type="number" id="nom8" min="1" value="1" >
+			</td><td>
+			<span class="custom-dropdown custom-dropdown--white">
+				<select name="selection" class="custom-dropdown__select custom-dropdown__select--white">
+		            <option selected="selected">Days</option>
+		            <option>Hours</option>
+		            <option>Minutes</option>
+	            </select>
+            </span>
+			</td>
+			</tr>
+			
+			<tr>
+			<td><label>HIT expires in:</label></td>
+			<td>
+				<input type="number" id="nom9" min="1" value="1">
+			</td><td>
+			<span class="custom-dropdown custom-dropdown--white">
+				<select name="selection" class="custom-dropdown__select custom-dropdown__select--white">
+		            <option selected="selected">Days</option>
+		            <option>Hours</option>
+		            <option>Minutes</option>
+	            </select>
+	        </span>
+			</td>
+			</tr>
+			
+			<tr>
+			<td><label>Auto-approve and pay Workers in:</label></td>
+			<td>
+				<input type="number" min="1" value="1" id="nom10">
+			</td><td>
+			<span class="custom-dropdown custom-dropdown--white">
+				<select name="selection" class="custom-dropdown__select custom-dropdown__select--white">
+		            <OPTION selected="selected">Days</OPTION>
+		            <OPTION>Hours</OPTION>
+		            <OPTION>Minutes</OPTION>
+		        </select>
+		    </span>
+			</td>
+			</tr>
+        </table>
+	</fieldset>
+>>>>>>> master
 </fieldset>
+<center>
+<table>
+<tr>
+<td colspan="2"><input style='width: 150px;' type="submit" value="Next" class="button special"/></td>
+</tr>
+</table>
+</center>
+</form>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
 /*$(document).ready(function() {
@@ -165,7 +318,30 @@ $('#nom7').keyup(function() {
     sum();
 });
 
+$('#nom1').click(function() {  
+	sum();
+});
 
+$('#nom2').click(function() {  
+	sum();
+});
+$('#nom3').click(function() {  
+	sum();
+});
+
+$('#nom4').click(function() {  
+	sum();
+});
+$('#nom5').click(function() {  
+    sum();
+});
+$('#nom6').click(function() {  
+    sum();
+});
+
+$('#nom7').click(function() {  
+    sum();
+});
  
 function sum() {
  var num1 = document.getElementById('nom1').value;
@@ -177,6 +353,7 @@ function sum() {
  
  if (!isNaN(result)) {
  document.getElementById('nom3').value = result;
+ num3 = result;
  }
  var result1=parseInt(num3) * parseFloat(num4);
  if (!isNaN(result1)) {
@@ -192,13 +369,16 @@ function sum() {
 </script>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <p style='padding-left:800px;margin-top:3%'><input type="submit" value="Save" class="button special"/>hh<button class="button special" style='height:37px;'>Design Layout</button></p>
 =======
 <p style='padding-left:800px;margin-top:3%'><input type="submit" value="Save" class="button special"/><button class="button special" style='height:37px;'>Design Layout</button></p>
 >>>>>>> master
+=======
+>>>>>>> master
 
-</form>
 <%@ include file="/include/footer.jsp" %>
-
+</div>
+</div>
 </body>
 </html>

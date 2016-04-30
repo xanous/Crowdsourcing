@@ -3,6 +3,7 @@ package com.domain;
 import java.util.ArrayList;
 
 public class Request {
+<<<<<<< HEAD
 	private int idRequest;
 	public int getIdRequest() {
 		return idRequest;
@@ -57,12 +58,25 @@ public class Request {
 	public void setTags(String keywords) {
 		this.tags = keywords;
 	}
+=======
+	Long idRequest;
+	 String title;
+	 String Description;
+	Categorie categorie;
+	public Long getIdRequest() {
+		return idRequest;
+	}
+	public void setIdRequest(Long idRequest) {
+		this.idRequest = idRequest;
+	}
+>>>>>>> master
 	public String getTitle() {
 		return title;
 	}
 	public void setTitle(String title) {
 		this.title = title;
 	}
+<<<<<<< HEAD
 	public int getNumberItem() {
 		return numberItem;
 	}
@@ -111,11 +125,25 @@ public class Request {
 	}
 	public void setNomRequester(String nomRequester) {
 		this.nomRequester = nomRequester;
+=======
+	public String getDescription() {
+		return Description;
+	}
+	public void setDescription(String description) {
+		Description = description;
+	}
+	public Categorie getCategorie() {
+		return categorie;
+	}
+	public void setCategorie(Categorie categorie) {
+		this.categorie = categorie;
+>>>>>>> master
 	}
 	public Request() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
+<<<<<<< HEAD
 	public String getTotalWorkerRewards() {
 		return TotalWorkerRewards;
 	}
@@ -130,6 +158,9 @@ public class Request {
 	}
 	
 
+=======
+	
+>>>>>>> master
 	
 	
 }

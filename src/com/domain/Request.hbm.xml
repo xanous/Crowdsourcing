@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<<<<<<< HEAD
 <!-- Generated 29 avr. 2016 20:14:09 by Hibernate Tools 3.5.0.Final -->
 <hibernate-mapping>
     <class name="com.domain.Request" table="REQUEST">
@@ -56,5 +57,23 @@
         <property name="instruction" type="java.lang.String">
             <column name="INSTRUCTION" />
         </property>
+=======
+<!-- Generated 27 avr. 2016 01:59:19 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.domain.Request" table="REQUEST">
+        <id name="idRequest" type="java.lang.Long">
+            <column name="IDREQUEST" />
+            <generator class="increment" />
+        </id>
+        <property name="title" type="java.lang.String">
+            <column name="TITLE" />
+        </property>
+        <property name="Description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+        <many-to-one name="categorie" class="com.domain.Categorie" fetch="join">
+            <column name="CATEGORIE" />
+        </many-to-one>
+>>>>>>> master
     </class>
 </hibernate-mapping>
