@@ -68,6 +68,7 @@ public class LogInWorkerController extends HttpServlet {
 					session.invalidate();
 			session = request.getSession(true);
 			session.setAttribute("login", user.getLogin());
+			session.setAttribute("class", Worker.class);
 			response.sendRedirect(request.getContextPath()+"/Pages/HomeWorker.jsp");
 		}
 		else{

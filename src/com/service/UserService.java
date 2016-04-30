@@ -31,4 +31,19 @@ public class UserService {
 		return user;
 		
 	}
+	public void updateRequester(String password,String login, Class c){
+		Session session =  Hibernate.getSessionFactory().getCurrentSession();
+		session.beginTransaction();
+		if(c.equals(Requester.class)) {
+			Requester requester=(Requester) session.load(Requester.class,login);
+			requester.setPassword(password);
+	 	    session.update(requester);
+		}
+		else {
+			Worker worker=(Worker) session.load(Worker.class,login);
+			worker.setPassword(password);
+	 	    session.update(worker);
+		}
+	 	session.getTransaction().commit();
+	}
 }

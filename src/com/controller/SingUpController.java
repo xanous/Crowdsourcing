@@ -81,7 +81,8 @@ public class SingUpController extends HttpServlet {
 				if(session != null )
 						session.invalidate();
 				session = request.getSession(true);
-				session.setAttribute("login", user.getLogin());
+				session.setAttribute("login", userR.getLogin());
+				session.setAttribute("class", Requester.class);
 				request.getRequestDispatcher("Pages/HomeRequester.jsp").forward(request, response);
 			}
 			else if(request.getParameter("type_account").equals("Worker")){
@@ -92,7 +93,8 @@ public class SingUpController extends HttpServlet {
 				if(session != null )
 						session.invalidate();
 				session = request.getSession(true);
-				session.setAttribute("login", user.getLogin());
+				session.setAttribute("login", userW.getLogin());
+				session.setAttribute("class", Worker.class);
 				request.getRequestDispatcher("Pages/HomeWorker.jsp").forward(request, response);
 			}
 		}
