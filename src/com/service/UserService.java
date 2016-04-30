@@ -17,7 +17,6 @@ public class UserService {
 		session.getTransaction().commit();
 	}
 	
-<<<<<<< HEAD
 	public User getClientByLogin(String login){
 		Session session=Hibernate.getSessionFactory().getCurrentSession();
 		session.beginTransaction();
@@ -33,7 +32,7 @@ public class UserService {
 		User user=(User) session.createQuery("from User").list();
 		return user;
 		}*/
-=======
+
 	public void add(Worker u){
 		Session session =  Hibernate.getSessionFactory().getCurrentSession();
 		session.beginTransaction();
@@ -63,5 +62,4 @@ public class UserService {
 		}
 	 	session.getTransaction().commit();
 	}
->>>>>>> 137835ef4f547f163fc4dca42f09bbad3fee11c5
 }

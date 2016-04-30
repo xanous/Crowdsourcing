@@ -1,27 +1,17 @@
 package com.service;
 
-
-
-<<<<<<< HEAD
-=======
 import java.util.Date;
 import java.util.List;
-
 import org.hibernate.Criteria;
->>>>>>> master
 import org.hibernate.Session;
-
 import com.domain.Request;
 import com.domain.Requester;
 import com.util.Hibernate;
 
 public class RequesterService {
 
-<<<<<<< HEAD
-	public void addRequest(String nameprojet,String titre, String description, String  keywords, int numberItem, int numberWorkerItem,int numberWorkerSubmission,  String rewardSubmission,String TotalWorkerRewards, String TotalCost,String Pay,int  TimeAllottedAssignment, int HITExpiresIn, int AutoApprove,String nom){
-=======
-	public void addRequest(String nameprojet,String titre, String description, String  keywords, int numberItem, int numberWorkerItem,int numberWorkerSubmission,  String rewardSubmission,String TotalWorkerRewards, String TotalCost,String Pay,int  TimeAllottedAssignment, int HITExpiresIn, int AutoApprove,String nom,Date date,String firstName){
->>>>>>> master
+	public void addRequest(String nameprojet,String titre, String description, String  keywords, int numberItem, int numberWorkerItem,int numberWorkerSubmission,  String rewardSubmission,String TotalWorkerRewards, String TotalCost,String Pay,int  TimeAllottedAssignment, int HITExpiresIn, int AutoApprove,String login, Date date,String nom){
+
 		
 		Session session =  Hibernate.getSessionFactory().getCurrentSession();
 		session.beginTransaction();
@@ -44,11 +34,9 @@ public class RequesterService {
         req.setHITExpiresIn(HITExpiresIn);
         req.setAutoApprove(AutoApprove);
         req.setNomRequester(nom);
-<<<<<<< HEAD
-        
-=======
+
         req.setDateCreation(date);
->>>>>>> master
+
 		session.save(req);
 		session.getTransaction().commit();
 		
@@ -63,7 +51,6 @@ public class RequesterService {
 	
 	}
 	
-<<<<<<< HEAD
 	public void updateRequester(String login,String nom,String instruction){
 		Session session =  Hibernate.getSessionFactory().getCurrentSession();
 		session.beginTransaction();
@@ -74,7 +61,6 @@ public class RequesterService {
 		session.update(req);
 		session.getTransaction().commit();
 	}
-=======
 	public void updateRequester(String password,String login){
 		Session session =  Hibernate.getSessionFactory().getCurrentSession();
 		session.beginTransaction();
@@ -101,5 +87,5 @@ public class RequesterService {
 	}
 	
 	
->>>>>>> master
+
 }
