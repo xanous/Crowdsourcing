@@ -10,7 +10,10 @@ import com.util.Hibernate;
 
 public class RequesterService {
 
-	public void addRequest(String nameprojet,String titre, String description, String  keywords, int numberItem, int numberWorkerItem,int numberWorkerSubmission,  String rewardSubmission,String TotalWorkerRewards, String TotalCost,String Pay,int  TimeAllottedAssignment, int HITExpiresIn, int AutoApprove,String login, Date date,String nom){
+	public int addRequest(String nameprojet,String titre, String description, String  keywords,
+			int numberItem, int numberWorkerItem,int numberWorkerSubmission,  
+			String rewardSubmission,String TotalWorkerRewards, String TotalCost,String Pay,
+			int  TimeAllottedAssignment, int HITExpiresIn, int AutoApprove, String login, Date date,String nom){
 
 		
 		Session session =  Hibernate.getSessionFactory().getCurrentSession();
@@ -33,19 +36,29 @@ public class RequesterService {
         req.setTimeAllottedAssignment(TimeAllottedAssignment);
         req.setHITExpiresIn(HITExpiresIn);
         req.setAutoApprove(AutoApprove);
-        req.setNomRequester(nom);
+        req.setNomRequester(login);
 
         req.setDateCreation(date);
-
-		session.save(req);
-		session.getTransaction().commit();
 		
+		int id = (Integer) session.save(req);
+		
+		session.getTransaction().commit();
+		return id;
 	}
 	
 	public Requester getRequester(String login){
 		Session session =  Hibernate.getSessionFactory().getCurrentSession();
 		session.beginTransaction();
 		Requester req=(Requester) session.load(Requester.class,login);
+		return req;
+	
+	
+	}
+	
+	public Request getRequest(int id){
+		Session session =  Hibernate.getSessionFactory().getCurrentSession();
+		session.beginTransaction();
+		Request req=(Request) session.load(Request.class,id);
 		return req;
 	
 	

@@ -16,21 +16,8 @@
 
 <div id="main" class="wrapper style1">
 					<div class="container">
-<nav>					
-<ol class="track-progress" data-steps="3">
-   <li class="done">
-    <span><a href="<%= request.getContextPath()%>/Pages/FormRequester.jsp">Enter Informations</a></span>
-     <i></i>
-   </li><!--
---><li class="done">
-     <span><a href="<%= request.getContextPath()%>/Pages/writing.jsp">Desgin Layout</a></span>
-   </li><!--
---><li>
-     <span><a href="#">Preview and finish</a></span>
-     <i></i>
-   </li>
- </ol>
- </nav>					
+					
+<%@ include file="/include/NavInfo.jsp" %>						
 
 <br>
   					
@@ -38,7 +25,7 @@
 
 
  <fieldset>
- 	<legend style='padding-left:5px;padding-right:5px;'>Name of the project</legend>
+ 	<legend>Name of the project</legend>
  	 <table> 
  	<tr><td>
 	 	<label for="text" style='padding-left:10px;'>What would you like to call your project?</label>

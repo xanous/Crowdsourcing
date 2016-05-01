@@ -1,3 +1,18 @@
+.titre1 {
+	margin-left:20px;
+	background:#c0c0c0;
+	color: black;
+	border-radius:7px 7px 0 0;
+	padding:5px;
+	padding-left:15px;
+	cursor:pointer;
+	font-weight:bold;
+}
+.div-request {
+
+	border: solid #e44c65 2px;
+	border-radius: 10px;
+}
 .error {
 	padding: 10px;
 	margin-bottom: 20px;

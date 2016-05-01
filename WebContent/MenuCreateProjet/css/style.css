@@ -53,7 +53,7 @@
 .track-progress li > span:after {
   top: -5px;
   z-index: 1;
-  border-left-color: #ff8080;
+  border-left-color: #1c1d26;
   border-width: 20px;
 }
 
@@ -79,7 +79,7 @@
   left: 0;
 
   border: solid transparent;
-  border-left-color: white;
+  border-left-color: #1c1d26;
   border-width: 15px;
 }
 
@@ -88,6 +88,6 @@
   right: -15px;
 
   border-left-color: transparent;
-  border-top-color: white;
-  border-bottom-color: white;
+  border-top-color: #1c1d26;
+  border-bottom-color: #1c1d26;
 }

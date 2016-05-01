@@ -20,91 +20,32 @@
 
 <div id="main" class="wrapper style1">
 					<div class="container">
-<nav>					
-<ol class="track-progress" data-steps="3">
-   <li class="done">
-    <span><a href="<%= request.getContextPath()%>/Pages/FormRequester.jsp">Enter Information</a></span>
-     <i></i>
-   </li><!--
---><li class="done">
-     <span><a href="<%= request.getContextPath()%>/Pages/writing.jsp">Desgin Layout</a></span>
-   </li><!--
---><li>
-     <span><a href="#" onclick="MyFunction()">Preview and finish</a></span>
-     <i></i>
-   </li>
- </ol>
- </nav>
-<hr size="20" style='background:#e44c65;'>	
 
-<fieldset>
+<%@ include file="/include/NavDesign.jsp" %>		
  
-<legend style='padding-left:5px;padding-right:5px;'>Name of the project</legend>
- 
- <table> 
- 	<tr> <td>
-	  	<input type="text" name="nom" id="text" value="">
-	  	</td>
-  	</tr>
-  	</table>
-
- </fieldset>	
- 	
- 	<br>
- 			
-<fieldset class="table2">
-	<legend>Instructions</legend>
+ <br>		
    					
-<<<<<<< HEAD
-<form class="input-append" action="#" method="POST">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<form class="input-append" action="" method="POST">
->>>>>>> master
- <fieldset style='border-color:#e44c65; border-style: solid;padding-left:80px;background-color:white'>
-=======
- <fieldset style='border-color:#e44c65; border-style: solid;padding-left:80px;'>
->>>>>>> master
+ <fieldset>
  <legend>Instructions</legend>
- 
-  <p style='padding-left:10px;'><textarea name="instructions"></textarea></p>
-=======
-  <table>
+   <table>
 		 <tr>
-		 <td>  <textarea name="instructions"></textarea>
+		 <td><label for="text" style='padding-left:10px;'>Intructions:</label></td>
+		 <td><textarea name="instructions" style='width:300%; height: 200%' ></textarea>
 		 </td>
 		 </tr>
 		 </table>
->>>>>>> master
  </fieldset>
  <br>
  <fieldset>
  <legend>Response</legend>
  <table>
-		
-		 <td>  <textarea name="instructions" placeholder="Write your Response" readonly></textarea>
+		<tr>
+		 <td><textarea placeholder="Write your Response" readonly></textarea>
 		 </td>
 		 </tr>
 		 </table>
 </fieldset>
 
-
-
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<p style='padding-left:800px;margin-top:3%'><input type="submit" value="Save" class="button special"/>hh<button class="button special" style='height:37px;'>Preview</button></p>
-=======
-<p style='padding-left:800px;margin-top:3%'><input type="submit" value="Save" class="button special"/><button class="button special" style='height:37px;'>Preview</button></p>
->>>>>>> master
-=======
-<p style='padding-left:800px;margin-top:3%'><input type="submit" value="Save" class="button special"/>
-<button class="button special" style='height:37px;'>Preview</button></p>
->>>>>>> master
-
-=======
 <center>
 <table>
 <tr>
@@ -112,9 +53,10 @@
 </tr>
 </table>
 </center>
->>>>>>> master
+
 </form>
 <%@ include file="/include/footer.jsp" %>
-
+</div>
+</div>
 </body>
 </html>

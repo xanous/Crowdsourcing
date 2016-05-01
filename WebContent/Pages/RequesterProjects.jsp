@@ -46,12 +46,12 @@ for(Request requests :requestH){
 	<summary>					
 <table width="100%">
 	<tr>
-	<td colspan="4" class="titre1"><%out.print(requests.getNomprojet()); %></td>
+	<td colspan="4" class="titre"><%out.print(requests.getNomprojet()); %></td>
 	</tr>
 	<tr>
 	<td class="td1"><label>Requester: <%out.print(requests.getNomRequester()); %></label></td>
 	<td class="td2"><label>Date</label></td>
-	<td class="td3"><label>Reward: <%out.print(requests.getNomRequester()); %>€</label></td>
+	<td class="td3"><label>Reward: <%out.print(requests.getRewardSubmission()); %>€</label></td>
 	</tr>
 	</table>
 </summary>

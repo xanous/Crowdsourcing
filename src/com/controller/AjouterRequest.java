@@ -1,7 +1,7 @@
 package com.controller;
 
 import java.io.IOException;
-
+import java.io.PrintWriter;
 import java.util.ArrayList;
 
 import java.util.Calendar;
@@ -79,8 +79,9 @@ public class AjouterRequest extends HttpServlet {
 	         HttpSession sess = request.getSession();
 	         String login = (String) sess.getAttribute("login");
 	         String nom=(String) sess.getAttribute("firstName");
-	         requesterservice.addRequest( nameprojet,description,titre,keywords,numberItem,numberWorkerItem,numberWorkerSubmission,
-	        rewardSubmission,TotalWorkerRewards,TotalCost, Pay,TimeAllottedAssignment, HITExpiresIn,AutoApprove,login,Calendar.getInstance().getTime(),nom);
+	         int id = requesterservice.addRequest( nameprojet,description,titre,keywords,numberItem,numberWorkerItem,numberWorkerSubmission,
+	        		 rewardSubmission,TotalWorkerRewards,TotalCost, Pay,TimeAllottedAssignment, HITExpiresIn,AutoApprove,login,Calendar.getInstance().getTime(),nom);
+	         sess.setAttribute("id_proj", id);
 	         response.sendRedirect(request.getContextPath()+"/Pages/writing.jsp");
 	      //   request.getRequestDispatcher(request.getContextPath()+"/Pages/writing.jsp").forward(request, response);
 	         

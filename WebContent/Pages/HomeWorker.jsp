@@ -32,6 +32,7 @@
 
 
 <div id="main" class="wrapper style1">
+<div class="container">
 <%
 Session sessionH =  Hibernate.getSessionFactory().getCurrentSession();
  sessionH.beginTransaction();
@@ -40,8 +41,8 @@ List<Request> requestH =sessionH.createQuery("from Request").list();
 for(Request requests :requestH){
 	
 %>
-					<div class="container">
-					<div class ="div-request">
+					
+<div class ="div-request">
 <details>
 	<summary>					
 <table width="100%">

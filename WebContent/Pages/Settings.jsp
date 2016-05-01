@@ -16,8 +16,11 @@
 
 </head>
 <body>
+<%if(session.getAttribute("class").equals("Requester")){ %>
 <%@ include file="/include/headerRequester.jsp" %>
-
+<%} else{ %>
+<%@ include file="/include/headerWorker.jsp" %>
+<%} %>
 <div id="main" class="wrapper style1">
 					<div class="container">			
 
