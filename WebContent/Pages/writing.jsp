@@ -29,7 +29,7 @@
  <legend>Instructions</legend>
    <table>
 		 <tr>
-		 <td><label for="text" style='padding-left:10px;'>Intructions:</label></td>
+		 <td><label for="text" style='padding-left:10px;'>Instructions:</label></td>
 		 <td><textarea name="instructions" style='width:300%; height: 200%' ></textarea>
 		 </td>
 		 </tr>

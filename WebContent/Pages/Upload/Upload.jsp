@@ -8,64 +8,60 @@
 <meta charset="UTF-8">
 <%@ include file="/include/css2.jsp" %>
 <link rel="stylesheet" href="<%= request.getContextPath()%>/MenuCreateProjet/css/style.css">
+<link rel="stylesheet" href="<%= request.getContextPath()%>/include/formRequest.css">
 </head>
 <body>
 <%@ include file="/include/headerRequester.jsp" %>
 
 <div id="main" class="wrapper style1">
 					<div class="container">
-<nav>					
-<ol class="track-progress" data-steps="3">
-   <li class="done">
-    <span><a href="<%= request.getContextPath()%>/Pages/Upload/FormRequesterUp.jsp">Enter Informations</a></span>
-     <i></i>
-   </li><!--
---><li class="done">
-     <span><a href="<%= request.getContextPath()%>/Pages/Upload/Upload.jsp">Desgin Layout</a></span>
-   </li><!--
---><li>
-     <span><a href="#">Preview and finish</a></span>
-     <i></i>
-   </li>
- </ol>
- </nav>
-<hr size="20" style='background:#e44c65;'>	
+					
+<%@ include file="/include/NavDesign.jsp" %>
 
-<fieldset style='border-color:#e44c65; border-style: solid;padding-left:80px;'>
- <legend>Name of the project</legend>
- 
-<p style='padding-left:10px;'><input type="text" name="nom" id="text" value="<%= request.getParameter("nameproject") %>"></p>
- </fieldset>					
-<div  style='background-color:#525252;width: 1213px;height: 70px;'>Instructions</div>
+<br>
+
+<form class="input-append" action="<%= request.getContextPath()%>/Pages/Upload/NewFile.jsp" method="post"
+
+enctype="multipart/form-data">
    					
-<form class="input-append" action="#" method="POST">
- <fieldset style='border-color:#e44c65; border-style: solid;padding-left:80px;'>
+ <fieldset>
  <legend>Instructions</legend>
- 
-  <p style='padding-left:10px;'><textarea name="instructions"></textarea></p>
+   <table>
+		 <tr>
+		 <td><label for="text" style='padding-left:10px;'>Instructions:</label></td>
+		 <td><textarea name="instructions" style='width:800px; height: 200px' ></textarea>
+		 </td>
+		 </tr>
+		 <tr>
+		 <td colspan="2"><label class="custom-file-upload"><input type="file" name="pic" accept="image/*"/>Upload an image</label></td>
+		 </tr>
+		 </table>
+		 
  </fieldset>
  
- <fieldset style='border-color:#e44c65; border-style: solid;padding-left:80px;'>
- <legend>Upload an image</legend>
+ <br>
  
-  <p style='padding-left:10px;'><input type="file" name="file" accept="image/*"></p>
- </fieldset>
- 
- 
- 
- <div  style='background-color:#525252;width: 1213px;height: 70px;'>Area for response</div>
- <fieldset style='border-color:#e44c65; border-style: solid;padding-left:80px;'>
+ <fieldset>
  <legend>Response</legend>
- <label for="text" style='padding-left:10px;'>Write your Response</label>
-  <p style='padding-left:10px;'><textarea name="instructions" readonly></textarea></p>
+ <table>
+		<tr>
+		 <td><textarea placeholder="Write your Response" readonly></textarea>
+		 </td>
+		 </tr>
+		 </table>
 </fieldset>
 
-
-
-
-<p style='padding-left:800px;margin-top:3%'><input type="submit" value="Save" class="button special"/><button class="button special" style='height:37px;'>Preview</button></p>
-
+<center>
+<table>
+<tr>
+<td colspan="2"><input style='width: 150px;' type="submit" value="Next" class="button special"/></td>
+</tr>
+</table>
+</center>
 </form>
+
+</div>
+</div>
 <%@ include file="/include/footer.jsp" %>
 
 </body>

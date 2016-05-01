@@ -1,3 +1,16 @@
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+	border: 0;
+    cursor: pointer;
+    background-color: #e44c65;
+	box-shadow: none;
+	color: #ffffff !important;
+}
 .titre1 {
 	margin-left:20px;
 	background:#c0c0c0;

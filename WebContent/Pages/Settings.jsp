@@ -34,7 +34,7 @@
 	
 	%>
  
- <fieldset class="table2">
+ <fieldset>
 	 <legend>My profil</legend>
 	 <fieldset style='border-color:#e44c65; border: solid 3px;'>
 	 	<legend>My name</legend>
@@ -90,8 +90,8 @@ function create_champ_update_pass() {
 	;
 	}
 </script>
+</div>
+</div>
 <%@ include file="/include/footer.jsp" %>
-</div>
-</div>
 </body>
 </html>

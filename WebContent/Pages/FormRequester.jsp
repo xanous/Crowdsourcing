@@ -38,22 +38,22 @@
  
  <br>
  
- <fieldset class="table2">
+ <fieldset>
 	 <legend>Description of the Hit</legend>
 	 <table>
 		 <tr>
 		 <td><label for="text" style='padding-left:10px;'>Title</label></td>
-		 <td><input type="text" name="title" id="text" placeholder="Type the Title of your Hit"></td>
+		 <td><input type="text" name="title" placeholder="Type the Title of your Hit"></td>
 		 </tr>
 		 
 		 <tr>
 		 <td><label for="text" style='padding-left:10px;'>Description</label></td>
-		 <td><input type="text" name="description" id="text" placeholder="Type a description for your Hit"></td>
+		 <td><input type="text" name="description" placeholder="Type a description for your Hit"></td>
 		 </tr>
 		 
 		 <tr>
 		 <td><label for="text" style='padding-left:10px;'>KeyWords</label></td>
-		 <td><input type="text" name="keywords" id="text" placeholder="Type some keywords for your Hit"></td>
+		 <td><input type="text" name="keywords" placeholder="Type some keywords for your Hit"></td>
 		 </tr>
 	 </table>
  </fieldset>
@@ -244,9 +244,9 @@ function sum() {
  }
 </script>
 
-
+</div>
+</div>
 <%@ include file="/include/footer.jsp" %>
-</div>
-</div>
+
 </body>
 </html>
