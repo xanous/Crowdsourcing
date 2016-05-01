@@ -93,18 +93,15 @@
  sum();
  });
 });*/
-
 $('#nom1').keyup(function() {  
 	sum();
 });
-
 $('#nom2').keyup(function() {  
 	sum();
 });
 $('#nom3').keyup(function() {  
 	sum();
 });
-
 $('#nom4').keyup(function() {  
 	sum();
 });
@@ -114,12 +111,9 @@ $('#nom5').keyup(function() {
 $('#nom6').keyup(function() {  
     sum();
 });
-
 $('#nom7').keyup(function() {  
     sum();
 });
-
-
  
 function sum() {
  var num1 = document.getElementById('nom1').value;
