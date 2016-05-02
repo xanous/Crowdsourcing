@@ -7,19 +7,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.domain.Answer;
-import com.service.AnswerService;
-
 /**
- * Servlet implementation class AnswerController
+ * Servlet implementation class LogoutController
  */
-public class AnswerController extends HttpServlet {
+public class LogoutController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public AnswerController() {
+    public LogoutController() {
         
     }
 
@@ -27,22 +24,18 @@ public class AnswerController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		HttpSession session = request.getSession();
+		session.invalidate();
+		response.sendRedirect(request.getContextPath());
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		AnswerService service = new AnswerService();
 		HttpSession session = request.getSession();
-		int id_proj = (Integer) session.getAttribute("id_projet");
-		Answer answer = new Answer((String) session.getAttribute("login"),
-				id_proj,
-				request.getParameter("answer"));
-		service.add(answer);
-		session.removeAttribute("id_projet");
-		response.sendRedirect(request.getContextPath()+"/Pages/HomeWorker.jsp");
+		session.invalidate();
+		response.sendRedirect(request.getContextPath());
 	}
 
 }

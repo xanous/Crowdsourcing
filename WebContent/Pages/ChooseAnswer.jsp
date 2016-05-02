@@ -74,9 +74,14 @@ List<Answer> answers =sessionH.createQuery("from Answer where idRequest='"+
 	<div class ="div-request">
 	<table width="100%">
 	<tr>
-	<td colspan="3" class="titre1">Worker: <%out.println(answer.getIdWorker()); %></td>
+	<td class="titre1">Worker: <%out.println(answer.getIdWorker()); %></td>
 	</tr>
 	<tr><td><textarea name="answer" readonly><%out.println(answer.getAnswer()); %></textarea></td></tr>
+	<tr><td>
+	<label class="custom-file-upload">
+	<a style='color:white' href="<%= request.getContextPath()%>/Controller?
+	id_answer=<%=answer.getIdAnswer() %>">Choose</a></label>
+	</td></tr>
 	</table>
 	</div>
 	<br>
@@ -93,7 +98,7 @@ List<Answer> answers =sessionH.createQuery("from Answer where idRequest='"+
 
 <tr><td>
 <label class="custom-file-upload">
-	<a style='color:white' href="<%= request.getContextPath()%>/Pages/HomeWorker.jsp">Back to Home</a></label>
+	<a style='color:white' href="<%= request.getContextPath()%>/Pages/HomeRequester.jsp">Back to Home</a></label>
 
 </td></tr>
 </table>

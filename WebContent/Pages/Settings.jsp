@@ -16,7 +16,8 @@
 
 </head>
 <body>
-<%if(session.getAttribute("class").equals("Requester")){ %>
+<%Class c1 = (Class) session.getAttribute("class"); %>
+<%if (c1 == Requester.class) { %>
 <%@ include file="/include/headerRequester.jsp" %>
 <%} else{ %>
 <%@ include file="/include/headerWorker.jsp" %>

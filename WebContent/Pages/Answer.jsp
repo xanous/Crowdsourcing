@@ -15,11 +15,11 @@
 
 </head>
 <body>
-<%@ include file="/include/headerRequester.jsp" %>
+<%@ include file="/include/headerWorker.jsp" %>
 
 <div id="main" class="wrapper style1">
 					<div class="container">
-<form class="input-append" action="../Answer" method="POST">				
+<form class="input-append" action="<%=request.getContextPath()%>/Answer" method="POST">				
 
 <br>
 
