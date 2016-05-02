@@ -74,9 +74,9 @@ List<Answer> answers =sessionH.createQuery("from Answer where idRequest='"+
 	<div class ="div-request">
 	<table width="100%">
 	<tr>
-	<td colspan="3" class="titre1">Worker: <%=answer.getIdWorker()%></td>
+	<td colspan="3" class="titre1">Worker: <%out.println(answer.getIdWorker()); %></td>
 	</tr>
-	<tr><td><textarea name="answer" readonly><%=answer.getAnswer() %></textarea></td></tr>
+	<tr><td><textarea name="answer" readonly><%out.println(answer.getAnswer()); %></textarea></td></tr>
 	</table>
 	</div>
 	<br>
