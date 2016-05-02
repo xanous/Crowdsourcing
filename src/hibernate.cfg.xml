@@ -32,5 +32,6 @@
   <mapping class="com.domain.Worker" resource="com/domain/Worker.hbm.xml"/>
   <mapping class="com.domain.Requester" resource="com/domain/Requester.hbm.xml"/>
   <mapping class="com.domain.Request" resource="com/domain/Request.hbm.xml"/>
+  <mapping class="com.domain.Answer" resource="com/domain/Answer.hbm.xml"/>
  </session-factory>
 </hibernate-configuration>

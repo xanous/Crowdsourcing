@@ -46,7 +46,11 @@ for(Request requests :requestH){
 	<summary>					
 <table width="100%">
 	<tr>
-	<td colspan="4" class="titre"><%out.print(requests.getNomprojet()); %></td>
+	<td colspan="2" class="titre1"><%out.print(requests.getNomprojet()); %></td><td class="titre2">
+	<label class="custom-file-upload">
+	<a href="<%= request.getContextPath()%>/Pages/ChooseAnswer.jsp?request=<%=
+	requests.getIdRequest()%>">Choose an answer</a></label>
+    </td>
 	</tr>
 	<tr>
 	<td class="td1"><label>Requester: <%out.print(requests.getNomRequester()); %></label></td>

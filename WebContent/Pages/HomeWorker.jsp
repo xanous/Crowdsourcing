@@ -48,8 +48,12 @@ for(Request requests :requestH){
 <table width="100%">
 
 	<tr>
-	<td colspan="2" class="titre1">Projet 1</td><td class="titre2"><input style='width: 150px;' type="submit" value="Repondre" class="button special"/></td>
-	</tr>
+	<td colspan="2" class="titre1">Projet 1</td><td class="titre2">
+	<label class="custom-file-upload">
+	<a href="<%= request.getContextPath()%>/Pages/Answer.jsp?request=<%=
+	requests.getIdRequest()%>">Answer</a></label>
+    </td>
+    </tr>
 	<tr>
 	<td class="td1"><label>Requester: <%out.print(requests.getNomRequester()); %></label></td>
 	<td class="td2"><label>Date: <%out.print(requests.getDateCreation()); %></label></td>

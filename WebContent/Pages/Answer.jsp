@@ -19,15 +19,14 @@
 
 <div id="main" class="wrapper style1">
 					<div class="container">
-					
-<%@ include file="/include/NavPreview.jsp" %>					
+<form class="input-append" action="../Answer" method="POST">				
 
 <br>
 
 <%
 RequesterService serviceReq = new RequesterService();
-Request requestH = serviceReq.getRequest((Integer)session.getAttribute("id_proj"));
-session.removeAttribute("id_proj");
+Request requestH = serviceReq.getRequest((Integer.parseInt(request.getParameter("request"))));
+session.setAttribute("id_projet", requestH.getIdRequest());
 %>
 <div class ="div-request">
 <table width="100%">
@@ -43,49 +42,69 @@ session.removeAttribute("id_proj");
 
 </div>
 
+<br>
+
  <fieldset>
- 	<legend>Request preview</legend>
  	 <fieldset style='border-color:#e44c65; border: solid 3px;'>
  		<legend>Instructions</legend>
    <table>
 		 <tr>
-		 <td><textarea name="instructions" style='width:300%; height: 200%' readonly>
+		 <td><textarea name="instructions" style='width:300%; height: 200%' readonly >
 		 <%=requestH.getInstruction() %>
 		 </textarea>
 		 </td>
 		 </tr>
 		 </table>
  </fieldset>
+ 
  <br>
- <fieldset style='border-color:#e44c65; border: solid 3px;'>
- <legend>Response</legend>
- <table>
-		<tr>
-		 <td><textarea placeholder="Write your Response" readonly></textarea>
-		 </td>
-		 </tr>
-		 </table>
-</fieldset>
+<div id="passwTable">
+<table> 
+	<tr>
+	<td>
+	<input id="update" type="button" onclick="take_It()" value="Take it !">
+	</td>
+	</tr>
+</table>		 
+</div>
+
+
  </fieldset>
  
  <br>
 <center>
-<table>
+<table id="Submit">
+
 <tr><td>
-<form class="input-append" action="<%= request.getContextPath()%>/Pages/RequesterProjects.jsp" method="POST">
-<input style='width: 150px;' type="submit" value="Confirm" class="button special"/>
-</form>
-</td>
-<td>
-<form class="input-append" action="<%= request.getContextPath()%>/Pages/HomeRequester.jsp" method="POST">
-<input style='width: 150px;' type="submit" value="Cancel" class="button special"/>
-</form>
+<label class="custom-file-upload">
+	<a style='color:white' href="<%= request.getContextPath()%>/Pages/HomeWorker.jsp">Back to Home</a></label>
+
 </td></tr>
 </table>
 </center>
 
+<script type="text/javascript">
+function take_It() {
+	document.getElementById('passwTable').innerHTML = ''
+	+'<fieldset style="border-color:#e44c65; border: solid 3px;">'
+	+'<legend>Response</legend>'
+	+' '
+	+'		<tr>'
+	+'		 <td><textarea name="answer" placeholder="Write your Answer"></textarea>'
+	+'		 </td>'
+	+'		 </tr>'
+	+' '
+	+'</fieldset>'
+	+'</table></div>';
+	
+	document.getElementById('Submit').innerHTML = '<tr><td>'
+		+'<input style="width: 150px;" type="submit" value="Confirm" class="button special"/>'
+		+'</td></tr>';
+	}		
+</script>
 
 <%@ include file="/include/footer.jsp" %>
+</form>
 </div>
 </div>
 </body>

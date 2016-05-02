@@ -1,3 +1,17 @@
+a{
+	color: #ffffff;
+}
+.custom-file-upload {
+	display: inline-block;
+    border-radius: 4px;
+    padding: 3px 15px;
+	border: 0;
+	margin-bottom: 0;
+    cursor: pointer;
+    background-color: #e44c65;
+	box-shadow: none;
+	color: #ffffff !important;
+}
 legend {
 	padding-left: 5px;
 	padding-right: 5px;
